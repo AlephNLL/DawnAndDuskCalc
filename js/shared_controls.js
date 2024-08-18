@@ -1547,13 +1547,6 @@ function selectFirstMon() {
 }
 
 function selectTrainer(value) {
-	document.getElementById("trainer-pok-list-opposing2").textContent="";
-	document.getElementById("trainer-pok-list-opposing").textContent="";
-	if(value >= 1620){
-		value = 1620;
-	}else if(value<=0){
-		value=1;
-	}
 	localStorage.setItem("lasttimetrainer", value);
 	all_poks = SETDEX_SS
 	for (const [pok_name, poks] of Object.entries(all_poks)) {
@@ -1561,10 +1554,6 @@ function selectTrainer(value) {
 		for (i in pok_tr_names) {
 			var index = (poks[pok_tr_names[i]]["index"])
 			if (index == value) {
-				if (window.CURRENT_TRAINER == pok_tr_names[0]){
-					return false
-				}
-				window.CURRENT_TRAINER = pok_tr_names[0]
 				var set = `${pok_name} (${pok_tr_names[i]})`;
 				$('.opposing').val(set);
 				$('.opposing').change();
@@ -1576,26 +1565,20 @@ function selectTrainer(value) {
 }
 
 function nextTrainer() {
-	if (selectTrainer(nextTrainerId) == false) {
-		if(value >= 1620){
-			return
-		}
-		nextTrainerId++
-		previousTrainer()
-	}
+	string = ($(".trainer-pok-list-opposing")).html()
+	initialSplit = string.split("[")
+	value = parseInt(initialSplit[initialSplit.length - 2].split("]")[0]) + 1
+	selectTrainer(value)
 }
 
 function previousTrainer() {
-	if (selectTrainer(previousTrainerId) == false) {
-		if(value<=0){
-			return
-		}
-		previousTrainerId--
-		previousTrainer()
-	}
+	string = ($(".trainer-pok-list-opposing")).html()
+	value = parseInt(string.split("]")[0].split("[")[1]) - 1
+	selectTrainer(value)
 }
+
 function resetTrainer() {
-	if (confirm(truckMessage())){
+	if (confirm(`Are you sure you want to reset? This will clear all imported sets and change your current trainer back to Younger Calvin. This cannot be undone.`)){
 		selectTrainer(1);
 		localStorage.removeItem("customsets");
 		$(allPokemon("#importedSetsOptions")).hide();
