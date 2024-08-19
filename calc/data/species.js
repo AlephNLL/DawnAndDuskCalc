@@ -2895,12 +2895,6 @@ var DPP_PATCH = {
         gender: 'N',
         baseSpecies: 'Arceus'
     },
-    Arghonaut: {
-        types: ['Water', 'Fighting'],
-        bs: { hp: 105, at: 110, df: 95, sa: 70, sd: 100, sp: 75 },
-        weightkg: 151,
-        abilities: { 0: 'Unaware' }
-    },
     Azelf: {
         types: ['Psychic'],
         bs: { hp: 75, at: 125, df: 70, sa: 125, sd: 70, sp: 115 },
@@ -2916,13 +2910,13 @@ var DPP_PATCH = {
     },
     Bibarel: {
         types: ['Normal', 'Water'],
-        bs: { hp: 79, at: 85, df: 60, sa: 55, sd: 60, sp: 71 },
+        bs: { hp: 99, at: 85, df: 60, sa: 55, sd: 60, sp: 71 },
         weightkg: 31.5,
         abilities: { 0: 'Simple' }
     },
     Bidoof: {
         types: ['Normal'],
-        bs: { hp: 59, at: 45, df: 40, sa: 35, sd: 40, sp: 31 },
+        bs: { hp: 75, at: 45, df: 40, sa: 35, sd: 40, sp: 31 },
         weightkg: 20,
         nfe: true,
         abilities: { 0: 'Simple' }

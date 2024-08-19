@@ -74,7 +74,7 @@ var SETDEX_SS = {"Abra":{"Youngster Joey":{"level":15,"ability":"Magic Guard","i
 "Mareanie":{"Team Aqua Matilde":{"level":15,"ability":"Regenerator","item":"Eject Button","nature":"Timid","moves":["Mesmerize","Brine","Venoshock","Mud Bomb"],"index":20}},
 "Marill":{"Lass Tiana":{"level":9,"ability":"Huge power","item":"Oran Berry","nature":"Docile","moves":["Rollout","Smooch","Aqua Rush","Defense Curl"],"index":4}},
 "Marshtomp":{"May/Brendan Rustboro City | Tepig":{"level":24,"ability":"Torrent","item":"Rindo Berry","nature":"Adamant","moves":["Bulldoze","Waterfall","Power-Up Punch","Ice Punch"],"index":26}},
-"Masquerain":{"Sailor Huey & Sailor Edmond":{"level":21,"ability":"Intimidate","item":"Bright Powder","nature":"Timid","moves":["Air Slash","Helping Hand","U Turn","Bubble Beam"],"index":30}},
+"Masquerain":{"Sailor Huey & Sailor Edmond":{"level":21,"ability":"Intimidate","item":"Bright Powder","nature":"Timid","moves":["Air Slash","Helping Hand","U-turn","Bubble Beam"],"index":30}},
 "Mawile":{"Twins Gina & Mia":{"level":14,"ability":"Intimidate","item":"Occa Berry","nature":"Brave","moves":["Metal Burst","Attract","Quick Attack","Smooch"],"index":13}},
 "Meowth-Alola":{"Rich Boy Winston":{"level":13,"ability":"Rattled","item":"Sitrus Berry","nature":"Bashful","moves":["Fake Out","Snarl","Swift","Thunder Wave"],"index":11}},
 "Meowth-Galar":{"Youngster Allen":{"level":9,"ability":"Steely Spirit","item":"None","nature":"Docile","moves":["Metal Claw","Fake Out","Hone Claws","Scratch"],"index":3}},
