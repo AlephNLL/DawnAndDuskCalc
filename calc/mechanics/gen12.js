@@ -30,7 +30,6 @@ var items_1 = require("../items");
 var result_1 = require("../result");
 var util_1 = require("./util");
 function calculateRBYGSC(gen, attacker, defender, move, field) {
-    var _a;
     (0, util_1.computeFinalStats)(gen, attacker, defender, field, 'atk', 'def', 'spa', 'spd', 'spe');
     var desc = {
         attackerName: attacker.name,
@@ -52,37 +51,9 @@ function calculateRBYGSC(gen, attacker, defender, move, field) {
             return result;
         }
     }
-    var typeEffectivenessPrecedenceRules = [
-        'Normal',
-        'Fire',
-        'Water',
-        'Electric',
-        'Grass',
-        'Ice',
-        'Fighting',
-        'Poison',
-        'Ground',
-        'Flying',
-        'Psychic',
-        'Bug',
-        'Rock',
-        'Ghost',
-        'Dragon',
-        'Dark',
-        'Steel',
-    ];
-    var firstDefenderType = defender.types[0];
-    var secondDefenderType = defender.types[1];
-    if (secondDefenderType && firstDefenderType !== secondDefenderType && gen.num === 2) {
-        var firstTypePrecedence = typeEffectivenessPrecedenceRules.indexOf(firstDefenderType);
-        var secondTypePrecedence = typeEffectivenessPrecedenceRules.indexOf(secondDefenderType);
-        if (firstTypePrecedence > secondTypePrecedence) {
-            _a = __read([secondDefenderType, firstDefenderType], 2), firstDefenderType = _a[0], secondDefenderType = _a[1];
-        }
-    }
-    var type1Effectiveness = (0, util_1.getMoveEffectiveness)(gen, move, firstDefenderType, field.defenderSide.isForesight);
-    var type2Effectiveness = secondDefenderType
-        ? (0, util_1.getMoveEffectiveness)(gen, move, secondDefenderType, field.defenderSide.isForesight)
+    var type1Effectiveness = (0, util_1.getMoveEffectiveness)(gen, move, defender.types[0], field.defenderSide.isForesight);
+    var type2Effectiveness = defender.types[1]
+        ? (0, util_1.getMoveEffectiveness)(gen, move, defender.types[1], field.defenderSide.isForesight)
         : 1;
     var typeEffectiveness = type1Effectiveness * type2Effectiveness;
     if (typeEffectiveness === 0) {
@@ -97,10 +68,6 @@ function calculateRBYGSC(gen, attacker, defender, move, field) {
     }
     if (move.hits > 1) {
         desc.hits = move.hits;
-    }
-    if (move.name === 'Triple Kick') {
-        move.bp = move.hits === 2 ? 15 : move.hits === 3 ? 20 : 10;
-        desc.moveBP = move.bp;
     }
     if (move.named('Flail', 'Reversal')) {
         move.isCrit = false;
@@ -123,40 +90,6 @@ function calculateRBYGSC(gen, attacker, defender, move, field) {
         (gen.num === 1 ||
             (gen.num === 2 && attacker.boosts[attackStat] <= defender.boosts[defenseStat]));
     var lv = attacker.level;
-if (gen.num === 1) {
-        if (field.attackerSide.isBadgeAtk) {
-            if ((move.hasType('Normal', 'Fighting', 'Flying', 'Ground', 'Rock', 'Bug', 'Ghost', 'Poison'))) {
-                at = Math.floor(at * 1.125);
-                desc.isBadgeAtk = true;
-            }
-        }
-        if (field.attackerSide.isBadgeSpec) {
-            if ((move.hasType('Water', 'Grass', 'Fire', 'Ice', 'Electric', 'Psychic', 'Dragon'))) {
-                at = Math.floor(at * 1.125);
-                desc.isBadgeSpec = true;
-            }
-        }
-        if (field.defenderSide.isBadgeSpec && !isPhysical) {
-            df = Math.floor(df * 1.125);
-        }
-        if (field.defenderSide.isBadgeDef && isPhysical) {
-            df = Math.floor(df * 1.125);
-        }
-    }
-    if (gen.num === 2) {
-        if (field.attackerSide.isBadgeBoosted > 0 && isPhysical) {
-            at = Math.floor(at * 1.125);
-        }
-        if (field.defenderSide.isBadgeBoosted > 5 && (defender.rawStats['spd'] > 205 && defender.rawStats['spd'] < 433 || defender.rawStats['spd'] > 660) && !isPhysical) {
-            df = Math.floor(df * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 5 && !isPhysical) {
-            at = Math.floor(at * 1.125);
-        }
-        if (field.defenderSide.isBadgeBoosted > 6 && isPhysical) {
-            df = Math.floor(df * 1.125);
-        }
-    }
     if (ignoreMods) {
         at = attacker.rawStats[attackStat];
         df = defender.rawStats[defenseStat];
@@ -238,57 +171,6 @@ if (gen.num === 1) {
         baseDamage = Math.floor(baseDamage / 2);
         desc.weather = field.weather;
     }
-// This needs to be reordered to account for post game and chuck/jasmmine/pryce split
-    if (gen.num === 2) {
-        if (field.attackerSide.isBadgeBoosted > 0 && move.hasType('Flying')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 1 && move.hasType('Bug')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 2 && move.hasType('Normal')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 3 && move.hasType('Ghost')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 4 && move.hasType('Fighting')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 5 && move.hasType('Ice')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 6 && move.hasType('Steel')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 7 && move.hasType('Dragon')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 8 && move.hasType('Electric')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 9 && move.hasType('Psychic')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 10 && move.hasType('Poison')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 11 && move.hasType('Grass')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 12 && move.hasType('Rock')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 13 && move.hasType('Water')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 14 && move.hasType('Fire')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-        if (field.attackerSide.isBadgeBoosted > 15 && move.hasType('Ground')) {
-            baseDamage = Math.floor(baseDamage * 1.125);
-        }
-    }
     if (move.hasType.apply(move, __spreadArray([], __read(attacker.types), false))) {
         baseDamage = Math.floor(baseDamage * 1.5);
     }
@@ -315,33 +197,6 @@ if (gen.num === 1) {
             else {
                 result.damage[i - 217] = Math.floor((baseDamage * i) / 255);
             }
-        }
-    }
-    if (move.hits > 1) {
-        var _loop_1 = function (times) {
-            var damageMultiplier = 217;
-            result.damage = result.damage.map(function (affectedAmount) {
-                if (times) {
-                    var newFinalDamage = 0;
-                    if (gen.num === 2) {
-                        newFinalDamage = Math.max(1, Math.floor((baseDamage * damageMultiplier) / 255));
-                    }
-                    else {
-                        if (baseDamage === 1) {
-                            newFinalDamage = 1;
-                        }
-                        else {
-                            newFinalDamage = Math.floor((baseDamage * damageMultiplier) / 255);
-                        }
-                    }
-                    damageMultiplier++;
-                    return affectedAmount + newFinalDamage;
-                }
-                return affectedAmount;
-            });
-        };
-        for (var times = 0; times < move.hits; times++) {
-            _loop_1(times);
         }
     }
     return result;
