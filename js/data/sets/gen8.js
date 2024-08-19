@@ -11,7 +11,7 @@ var SETDEX_SS = {"Abra":{"Youngster Joey":{"level":15,"ability":"Magic Guard","i
 "Binacle":{"Hiker Clark & Youngster Johnson":{"level":15,"ability":"Tough Claws","item":"Muscle Band","nature":"Serious","moves":["Razor Shell","Slash","Rock Tomb","Peck"],"index":18}},
 "Boldore":{"Leader Roxanne":{"level":19,"ability":"Sand Force","item":"Hard Stone","nature":"Calm","moves":["Mud Shot","Ancient Power","Hidden Power Ice","Iron Defense"],"index":24}},
 "Brionne":{"Tuber Hailey":{"level":22,"ability":"Liquid Voice","item":"Lum Berry","nature":"Modest","moves":["Uproar","Attract","Draining Kiss","None"],"index":32}},
-"Bruxish":{"Fisherman Elliot":{"level":21,"ability":"Strong Jaw","item":"Mystic Water","nature":"Jolly","moves":["Psychic Fang","Ice Fang","Aqua Jet","Smooch"],"index":29}},
+"Bruxish":{"Fisherman Elliot":{"level":21,"ability":"Strong Jaw","item":"Mystic Water","nature":"Jolly","moves":["Psychic Fangs","Ice Fang","Aqua Jet","Smooch"],"index":29}},
 "Buizel":{"Tuber Lola & Tuber Chandler":{"level":22,"ability":"Wave Surfer","item":"Covert Cloak","nature":"Jolly","moves":["Aqua Tail","Ice Fang","Muddy Slam","Bite"],"index":33}},
 "Carbink":{"Youngster Josh":{"level":18,"ability":"Levitate","item":"Rocky Helmet","nature":"Brave","moves":["Gyro Ball","Smack Down","Smooch","Self-Destruct"],"index":21}},
 "Carkol":{"Hiker Marc":{"level":17,"ability":"Steam Engine","item":"Passho Berry","nature":"Sassy","moves":["Will-O-Wisp","Incinerate","Smack Down","Body Slam"],"index":23}},
