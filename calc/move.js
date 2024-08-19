@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.getMaxMoveName = exports.getZMoveName = exports.Move = void 0;
+
 var util_1 = require("./util");
 var SPECIAL = ['Fire', 'Water', 'Grass', 'Electric', 'Ice', 'Psychic', 'Dark', 'Dragon'];
 var Move = (function () {
@@ -40,21 +40,16 @@ var Move = (function () {
         }
         else {
             if (data.multihit) {
-                if (data.multiaccuracy && typeof data.multihit === 'number') {
-                    this.hits = options.hits || data.multihit;
+                if (typeof data.multihit === 'number') {
+                    this.hits = data.multihit;
+                }
+                else if (options.hits) {
+                    this.hits = options.hits;
                 }
                 else {
-                    if (typeof data.multihit === 'number') {
-                        this.hits = data.multihit;
-                    }
-                    else if (options.hits) {
-                        this.hits = options.hits;
-                    }
-                    else {
-                        this.hits = (options.ability === 'Skill Link')
-                            ? data.multihit[1]
-                            : data.multihit[0] + 1;
-                    }
+                    this.hits = (options.ability === 'Skill Link')
+                        ? data.multihit[1]
+                        : data.multihit[0] + 1;
                 }
             }
             this.timesUsedWithMetronome = options.timesUsedWithMetronome;
@@ -86,7 +81,6 @@ var Move = (function () {
         this.struggleRecoil = !!data.struggleRecoil;
         this.isCrit = !!options.isCrit || !!data.willCrit ||
             gen.num === 1 && ['crabhammer', 'razorleaf', 'slash', 'karate chop'].includes(data.id);
-        this.isStellarFirstUse = !!options.isStellarFirstUse;
         this.drain = data.drain;
         this.flags = data.flags;
         this.priority = data.priority || 0;
@@ -98,7 +92,6 @@ var Move = (function () {
         this.breaksProtect = !!data.breaksProtect;
         this.isZ = !!data.isZ;
         this.isMax = !!data.isMax;
-        this.multiaccuracy = !!data.multiaccuracy;
         if (!this.bp) {
             if (['return', 'frustration', 'pikapapow', 'veeveevolley'].includes(data.id)) {
                 this.bp = 102;
@@ -127,7 +120,6 @@ var Move = (function () {
             useZ: this.useZ,
             useMax: this.useMax,
             isCrit: this.isCrit,
-            isStellarFirstUse: this.isStellarFirstUse,
             hits: this.hits,
             timesUsed: this.timesUsed,
             timesUsedWithMetronome: this.timesUsedWithMetronome,

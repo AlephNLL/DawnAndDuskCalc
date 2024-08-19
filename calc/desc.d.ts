@@ -28,10 +28,6 @@ export interface RawDesc {
     isFlowerGiftDefender?: boolean;
     isFriendGuard?: boolean;
     isHelpingHand?: boolean;
-isBadgeAtk?: boolean;
-    isBadgeDef?: boolean;
-    isBadgeSpeed?: boolean;
-    isBadgeSpec?: boolean;
     isCritical?: boolean;
     isLightScreen?: boolean;
     isBurned?: boolean;
@@ -61,7 +57,11 @@ export declare function getRecoil(gen: Generation, attacker: Pokemon, defender: 
     text: string;
 };
 export declare function getKOChance(gen: Generation, attacker: Pokemon, defender: Pokemon, move: Move, field: Field, damage: Damage, err?: boolean): {
-    chance: number | undefined;
+    chance: number;
     n: number;
     text: string;
+} | {
+    n: number;
+    text: string;
+    chance?: undefined;
 };

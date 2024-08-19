@@ -11,10 +11,8 @@ export declare class Pokemon implements State.Pokemon {
     ability?: I.AbilityName;
     abilityOn?: boolean;
     isDynamaxed?: boolean;
-    dynamaxLevel?: number;
     isSaltCure?: boolean;
     alliesFainted?: number;
-    boostedStat?: I.StatIDExceptHP | 'auto';
     item?: I.ItemName;
     teraType?: I.TypeName;
     nature: I.NatureName;
