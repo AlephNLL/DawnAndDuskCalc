@@ -1536,11 +1536,8 @@ function truckMessage(){
 
 //select first mon of the box when loading
 function selectFirstMon() {
-	var pMons = document.getElementsByClassName("trainer-pok left-side")[0];
-	if(!pMons){
-		return
-	}
-	let set = pMons.getAttribute("data-id");
+	var pMons = document.getElementsByClassName("trainer-pok left-side");
+	let set = pMons[i].getAttribute("data-id");
 	$('.player').val(set);
 	$('.player').change();
 	$('.player .select2-chosen').text(set);

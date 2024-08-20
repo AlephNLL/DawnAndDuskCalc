@@ -2,7 +2,7 @@ var SETDEX_SS = {"Abra":{"Youngster Joey":{"level":15,"ability":"Magic Guard","i
 "Alcremie":{"Lady Sarah":{"level":27,"ability":"Aroma Veil","item":"Leftovers","nature":"Quiet","moves":["Calm Mind","Acid Armor","Psyshock","Draining Kiss"],"index":37}},
 "Amaura":{"Youngster Josh":{"level":17,"ability":"Refrigerate","item":"Sitrus Berry","nature":"Naive","moves":["Echoed Voice","Ancient Power","Charge Beam","Hidden Power Grass"],"index":21}},
 "Anorith":{"Youngster Tommy":{"level":17,"ability":"Battle Armor","item":"Sitrus Berry","nature":"Naughty","moves":["Bug Bite","Aerial Ace","Rock Tomb","Cut"],"index":22}},
-"Archen":{"Leader Roxanne":{"level":19,"ability":"Defeatist","item":"Sitru Berry","nature":"Jolly","moves":["Pluck","Bulldoze","Rock Blast","Double Team"],"index":24}},
+"Archen":{"Leader Roxanne":{"level":19,"ability":"Defeatist","item":"Sitrus Berry","nature":"Jolly","moves":["Pluck","Bulldoze","Rock Blast","Double Team"],"index":24}},
 "Azumarill":{"Tuber Hailey":{"level":23,"ability":"Huge Power","item":"Rindo Berry","nature":"Adamant","moves":["Aqua Jet","Smooch","Ice Punch","Body Slam"],"index":32}},
 "Barboach":{"Fisherman Ivan":{"level":14,"ability":"Oblivious","item":"Rindo Berry","nature":"Jolly","moves":["Muddy Slam","Aqua Rush","Natural Gift","Amnesia"],"index":14}},
 "Basculin":{"Fisherman Elliot":{"level":20,"ability":"Reckless","item":"King's Rock","nature":"Jolly","moves":["Take Down","Scale Shot","Waterfall","Bite"],"index":29}},
