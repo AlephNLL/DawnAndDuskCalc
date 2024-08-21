@@ -766,7 +766,7 @@ var DPP_PATCH = {
     'Quick Attack': { category: 'Physical' },
     'Razor Leaf': { category: 'Physical' },
     'Rock Slide': { category: 'Physical' },
-    'Rock Smash': { bp: 40, category: 'Physical' },
+    'Rock Smash': { bp: 60, category: 'Physical' },
     'Rock Throw': { category: 'Physical' },
     Scratch: { category: 'Physical' },
     'Seismic Toss': { category: 'Physical' },
