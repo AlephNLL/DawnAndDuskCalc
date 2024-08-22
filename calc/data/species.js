@@ -1778,7 +1778,7 @@ var ADV_PATCH = {
     Yanma: { abilities: { 0: 'Speed Boost' } },
     Absol: {
         types: ['Dark'],
-        bs: { hp: 65, at: 130, df: 60, sa: 75, sd: 60, sp: 75 },
+        bs: { hp: 75, at: 130, df: 60, sa: 75, sd: 60, sp: 95 },
         weightkg: 47,
         abilities: { 0: 'Pressure' }
     },
@@ -1790,7 +1790,7 @@ var ADV_PATCH = {
     },
     Altaria: {
         types: ['Dragon', 'Flying'],
-        bs: { hp: 75, at: 70, df: 90, sa: 70, sd: 105, sp: 80 },
+        bs: { hp: 75, at: 60, df: 90, sa: 80, sd: 105, sp: 80 },
         weightkg: 20.6,
         abilities: { 0: 'Natural Cure' }
     },
@@ -1978,7 +1978,7 @@ var ADV_PATCH = {
     },
     Crawdaunt: {
         types: ['Water', 'Dark'],
-        bs: { hp: 75, at: 120, df: 85, sa: 90, sd: 75, sp: 55 },
+        bs: { hp: 75, at: 120, df: 85, sa: 70, sd: 75, sp: 55 },
         weightkg: 32.8,
         abilities: { 0: 'Hyper Cutter' }
     },
@@ -2048,22 +2048,22 @@ var ADV_PATCH = {
     },
     Exploud: {
         types: ['Normal'],
-        bs: { hp: 104, at: 91, df: 63, sa: 101, sd: 63, sp: 70 },
+        bs: { hp: 104, at: 81, df: 63, sa: 101, sd: 63, sp: 70 },
         weightkg: 84,
         abilities: { 0: 'Soundproof' }
     },
     Feebas: {
         types: ['Water'],
-        bs: { hp: 20, at: 15, df: 20, sa: 10, sd: 55, sp: 80 },
+        bs: { hp: 40, at: 25, df: 40, sa: 60, sd: 55, sp: 80 },
         weightkg: 7.4,
         nfe: true,
         abilities: { 0: 'Swift Swim' }
     },
     Flygon: {
         types: ['Ground', 'Dragon'],
-        bs: { hp: 80, at: 100, df: 80, sa: 80, sd: 80, sp: 100 },
+        bs: { hp: 85, at: 110, df: 80, sa: 130, sd: 80, sp: 115 },
         weightkg: 82,
-        abilities: { 0: 'Levitate' }
+        abilities: { 0: 'Dragon Goggles' }
     },
     Gardevoir: {
         types: ['Psychic'],
@@ -2139,11 +2139,11 @@ var ADV_PATCH = {
         types: ['Normal'],
         bs: { hp: 60, at: 90, df: 70, sa: 60, sd: 120, sp: 40 },
         weightkg: 22,
-        abilities: { 0: 'Color Change' }
+        abilities: { 0: 'Protean' }
     },
     Kirlia: {
         types: ['Psychic'],
-        bs: { hp: 38, at: 35, df: 35, sa: 65, sd: 55, sp: 50 },
+        bs: { hp: 48, at: 35, df: 45, sa: 82, sd: 75, sp: 65 },
         weightkg: 20.2,
         nfe: true,
         abilities: { 0: 'Synchronize' }
@@ -2366,7 +2366,7 @@ var ADV_PATCH = {
     },
     Ralts: {
         types: ['Psychic'],
-        bs: { hp: 28, at: 25, df: 25, sa: 45, sd: 35, sp: 40 },
+        bs: { hp: 30, at: 25, df: 25, sa: 70, sd: 45, sp: 50 },
         weightkg: 6.6,
         nfe: true,
         abilities: { 0: 'Synchronize' }
@@ -2539,7 +2539,7 @@ var ADV_PATCH = {
     },
     Spinda: {
         types: ['Normal'],
-        bs: { hp: 60, at: 60, df: 60, sa: 60, sd: 60, sp: 60 },
+        bs: { hp: 65, at: 60, df: 60, sa: 75, sd: 60, sp: 80 },
         weightkg: 5,
         abilities: { 0: 'Own Tempo' }
     },
@@ -2607,7 +2607,7 @@ var ADV_PATCH = {
         bs: { hp: 45, at: 100, df: 45, sa: 45, sd: 45, sp: 10 },
         weightkg: 15,
         nfe: true,
-        abilities: { 0: 'Hyper Cutter' }
+        abilities: { 0: 'Overcoat' }
     },
     Treecko: {
         types: ['Grass'],
@@ -2624,9 +2624,9 @@ var ADV_PATCH = {
     },
     Vibrava: {
         types: ['Ground', 'Dragon'],
-        bs: { hp: 50, at: 70, df: 50, sa: 50, sd: 50, sp: 70 },
+        bs: { hp: 50, at: 70, df: 55, sa: 80, sd: 55, sp: 70 },
         weightkg: 15.3,
-        abilities: { 0: 'Levitate' },
+        abilities: { 0: 'Tinted Lens' },
         nfe: true
     },
     Vigoroth: {
@@ -2651,7 +2651,7 @@ var ADV_PATCH = {
     },
     Wailord: {
         types: ['Water'],
-        bs: { hp: 150, at: 90, df: 55, sa: 110, sd: 55, sp: 50 },
+        bs: { hp: 170, at: 90, df: 55, sa: 110, sd: 55, sp: 50 },
         weightkg: 398,
         abilities: { 0: 'Water Veil' }
     },
