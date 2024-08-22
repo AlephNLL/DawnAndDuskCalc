@@ -174,11 +174,11 @@ var RBY = {
     },
     Diglett: {
         types: ['Ground'],
-        bs: { hp: 10, at: 55, df: 25, sp: 95, sl: 45 },
+        bs: { hp: 45, at: 75, df: 25, sp: 95, sl: 45 },
         weightkg: 0.8,
         nfe: true
     },
-    Ditto: { types: ['Normal'], bs: { hp: 48, at: 48, df: 48, sp: 48, sl: 48 }, weightkg: 4 },
+    Ditto: { types: ['Normal'], bs: { hp: 78, at: 48, df: 48, sp: 48, sl: 48 }, weightkg: 4 },
     Dodrio: {
         types: ['Normal', 'Flying'],
         bs: { hp: 60, at: 110, df: 70, sp: 100, sl: 60 },
@@ -215,7 +215,7 @@ var RBY = {
     },
     Dugtrio: {
         types: ['Ground'],
-        bs: { hp: 35, at: 80, df: 50, sp: 120, sl: 70 },
+        bs: { hp: 68, at: 80, df: 50, sp: 120, sl: 70 },
         weightkg: 33.3
     },
     Eevee: {
@@ -253,7 +253,7 @@ var RBY = {
     },
     'Farfetch\u2019d': {
         types: ['Normal', 'Flying'],
-        bs: { hp: 72, at: 65, df: 55, sp: 85, sl: 58 },
+        bs: { hp: 72, at: 105, df: 55, sp: 85, sl: 58 },
         weightkg: 15
     },
     Fearow: {
@@ -348,7 +348,7 @@ var RBY = {
         nfe: true
     },
     Hypno: {
-        types: ['Psychic'],
+        types: ['Psychic', 'Dark'],
         bs: { hp: 85, at: 73, df: 70, sp: 67, sl: 115 },
         weightkg: 75.6
     },
@@ -470,10 +470,10 @@ var RBY = {
         weightkg: 28,
         nfe: true
     },
-    Marowak: { types: ['Ground', 'Ghost'], bs: { hp: 80, at: 95, df: 110, sp: 65, sl: 50 }, weightkg: 45 },
+    Marowak: { types: ['Ground', 'Ghost'], bs: { hp: 80, at: 95, df: 110, sp: 60, sl: 50 }, weightkg: 45 },
     Meowth: {
         types: ['Normal'],
-        bs: { hp: 40, at: 45, df: 35, sp: 90, sl: 40 },
+        bs: { hp: 40, at: 60, df: 35, sp: 90, sl: 40 },
         weightkg: 4.2,
         nfe: true
     },
@@ -576,7 +576,7 @@ var RBY = {
         bs: { hp: 80, at: 110, df: 80, sp: 30, sl: 80 },
         weightkg: 29.5
     },
-    Persian: { types: ['Normal'], bs: { hp: 65, at: 70, df: 60, sp: 115, sl: 65 }, weightkg: 32 },
+    Persian: { types: ['Normal'], bs: { hp: 70, at: 95, df: 60, sp: 115, sl: 65 }, weightkg: 32 },
     Pidgeot: {
         types: ['Electric', 'Flying'],
         bs: { hp: 83, at: 60, df: 75, sp: 91, sl: 70 },
@@ -744,7 +744,7 @@ var RBY = {
     },
     Tauros: {
         types: ['Normal'],
-        bs: { hp: 75, at: 100, df: 95, sp: 110, sl: 70 },
+        bs: { hp: 80, at: 100, df: 95, sp: 110, sl: 70 },
         weightkg: 88.4
     },
     Tentacool: {
@@ -847,7 +847,7 @@ var GSC_PATCH = {
     Alakazam: { bs: { sa: 135, sd: 85 } },
     Arbok: { bs: { sa: 65, sd: 79 } },
     Arcanine: { bs: { sa: 100, sd: 80 } },
-    Articuno: { bs: { sa: 95, sd: 125 }, gender: 'N' },
+    Articuno: { bs: { sa: 125, sd: 95 }, gender: 'N' },
     Beedrill: { bs: { sa: 45, sd: 80 } },
     Bellsprout: { bs: { sa: 70, sd: 30 } },
     Blastoise: { bs: { sa: 85, sd: 105 } },
@@ -863,7 +863,7 @@ var GSC_PATCH = {
     Cloyster: { bs: { sa: 85, sd: 45 } },
     Cubone: { bs: { sa: 40, sd: 50 } },
     Dewgong: { bs: { sa: 85, sd: 95 } },
-    Diglett: { bs: { sa: 35, sd: 45 } },
+    Diglett: { bs: { sa: 35, sd: 50 } },
     Ditto: { bs: { sa: 48, sd: 48 }, gender: 'N' },
     Dodrio: { bs: { sa: 60, sd: 60 } },
     Doduo: { bs: { sa: 35, sd: 35 } },
@@ -975,7 +975,7 @@ var GSC_PATCH = {
     Starmie: { bs: { sa: 100, sd: 85 }, gender: 'N' },
     Staryu: { bs: { sa: 70, sd: 55 }, gender: 'N' },
     Tangela: { bs: { sa: 100, sd: 40 } },
-    Tauros: { bs: { sa: 40, sd: 70 } },
+    Tauros: { bs: { sa: 40, sd: 80 } },
     Tentacool: { bs: { sa: 50, sd: 100 } },
     Tentacruel: { bs: { sa: 80, sd: 120 } },
     Vaporeon: { bs: { sa: 110, sd: 95 } },
@@ -1051,7 +1051,7 @@ var GSC_PATCH = {
     },
     Corsola: {
         types: ['Water', 'Rock'],
-        bs: { hp: 55, at: 55, df: 85, sa: 65, sd: 85, sp: 35 },
+        bs: { hp: 65, at: 55, df: 95, sa: 65, sd: 95, sp: 35 },
         weightkg: 5
     },
     Crobat: {
@@ -1067,7 +1067,7 @@ var GSC_PATCH = {
     },
     Cyndaquil: {
         types: ['Fire'],
-        bs: { hp: 39, at: 52, df: 43, sa: 60, sd: 50, sp: 65 },
+        bs: { hp: 45, at: 55, df: 45, sa: 65, sd: 55, sp: 70 },
         weightkg: 7.9,
         nfe: true
     },
@@ -1231,7 +1231,7 @@ var GSC_PATCH = {
     },
     Mantine: {
         types: ['Water', 'Flying'],
-        bs: { hp: 65, at: 40, df: 70, sa: 80, sd: 140, sp: 70 },
+        bs: { hp: 65, at: 40, df: 70, sa: 95, sd: 140, sp: 70 },
         weightkg: 220
     },
     Mareep: {
@@ -1247,8 +1247,8 @@ var GSC_PATCH = {
         nfe: true
     },
     Meganium: {
-        types: ['Grass'],
-        bs: { hp: 80, at: 82, df: 100, sa: 83, sd: 100, sp: 80 },
+        types: ['Grass', 'Fairy'],
+        bs: { hp: 80, at: 82, df: 100, sa: 93, sd: 100, sp: 80 },
         weightkg: 100.5
     },
     Miltank: {
@@ -1307,7 +1307,7 @@ var GSC_PATCH = {
     },
     Politoed: {
         types: ['Water'],
-        bs: { hp: 90, at: 75, df: 75, sa: 90, sd: 100, sp: 70 },
+        bs: { hp: 90, at: 70, df: 75, sa: 95, sd: 100, sp: 70 },
         weightkg: 33.9
     },
     Porygon2: {
@@ -1368,7 +1368,7 @@ var GSC_PATCH = {
     },
     Skarmory: {
         types: ['Steel', 'Flying'],
-        bs: { hp: 65, at: 80, df: 140, sa: 40, sd: 70, sp: 70 },
+        bs: { hp: 75, at: 90, df: 140, sa: 40, sd: 70, sp: 70 },
         weightkg: 50.5
     },
     Skiploom: {
@@ -1419,7 +1419,7 @@ var GSC_PATCH = {
     },
     Steelix: {
         types: ['Steel', 'Ground'],
-        bs: { hp: 75, at: 85, df: 200, sa: 55, sd: 65, sp: 30 },
+        bs: { hp: 75, at: 105, df: 200, sa: 55, sd: 75, sp: 30 },
         weightkg: 400
     },
     Sudowoodo: {
@@ -1434,13 +1434,13 @@ var GSC_PATCH = {
         gender: 'N'
     },
     Sunflora: {
-        types: ['Grass'],
-        bs: { hp: 75, at: 75, df: 55, sa: 105, sd: 85, sp: 30 },
+        types: ['Grass', 'Fire'],
+        bs: { hp: 95, at: 75, df: 55, sa: 115, sd: 85, sp: 30 },
         weightkg: 8.5
     },
     Sunkern: {
         types: ['Grass'],
-        bs: { hp: 30, at: 30, df: 30, sa: 30, sd: 30, sp: 30 },
+        bs: { hp: 50, at: 50, df: 50, sa: 50, sd: 50, sp: 30 },
         weightkg: 1.8,
         nfe: true
     },
@@ -6214,7 +6214,7 @@ var SM_PATCH = {
     Delcatty: { bs: { sp: 90 } },
     Diglett: { otherFormes: ['Diglett-Alola'] },
     Dodrio: { bs: { sp: 110 } },
-    Dugtrio: { bs: { at: 100 }, otherFormes: ['Dugtrio-Alola'] },
+    Dugtrio: { bs: { at: 110 }, otherFormes: ['Dugtrio-Alola'] },
     Eevee: { otherFormes: ['Eevee-Starter'] },
     Electrode: { bs: { sp: 150 } },
     Exeggutor: { bs: { sd: 75 }, otherFormes: ['Exeggutor-Alola'] },
@@ -6421,7 +6421,7 @@ var SM_PATCH = {
     },
     'Diglett-Alola': {
         types: ['Ground', 'Steel'],
-        bs: { hp: 10, at: 55, df: 30, sa: 35, sd: 45, sp: 90 },
+        bs: { hp: 45, at: 75, df: 30, sa: 35, sd: 50, sp: 90 },
         weightkg: 1,
         baseSpecies: 'Diglett',
         nfe: true,
@@ -6429,7 +6429,7 @@ var SM_PATCH = {
     },
     'Dugtrio-Alola': {
         types: ['Ground', 'Steel'],
-        bs: { hp: 35, at: 100, df: 60, sa: 50, sd: 70, sp: 110 },
+        bs: { hp: 68, at: 110, df: 60, sa: 50, sd: 70, sp: 110 },
         weightkg: 66.6,
         baseSpecies: 'Dugtrio',
         abilities: { 0: 'Sand Veil' }
