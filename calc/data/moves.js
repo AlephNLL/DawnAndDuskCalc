@@ -555,7 +555,7 @@ var ADV_PATCH = {
     'Poison Tail': { bp: 50, type: 'Poison', makesContact: true },
     'Shadow Punch': { bp: 60, type: 'Ghost', makesContact: true },
     'Shock Wave': { bp: 60, type: 'Electric' },
-    Superpower: { bp: 120, type: 'Fighting', self: { boosts: { atk: -1, def: -1 } }, makesContact: true },
+    Superpower: { bp: 120, type: 'Fighting', makesContact: true },
     'Water Pulse': { bp: 60, type: 'Water' },
     'Water Spout': { bp: 150, type: 'Water', target: 'allAdjacentFoes' },
     Yawn: { bp: 0, category: 'Status', type: 'Normal' }
