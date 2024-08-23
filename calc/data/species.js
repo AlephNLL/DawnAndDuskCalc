@@ -7687,7 +7687,7 @@ var SS_PATCH = {
     },
     Boltund: {
         types: ['Electric'],
-        bs: { hp: 69, at: 105, df: 60, sa: 70, sd: 60, sp: 121 },
+        bs: { hp: 69, at: 95, df: 60, sa: 70, sd: 60, sp: 121 },
         weightkg: 34,
         abilities: { 0: 'Strong Jaw' }
     },
