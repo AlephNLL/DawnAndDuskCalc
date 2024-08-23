@@ -4911,7 +4911,6 @@ var SS_PATCH = {
         category: 'Special',
         zp: 110,
         maxPower: 85,
-        makesContact: true,
         secondaries: true
     },
     'Baffle': {
@@ -4920,7 +4919,6 @@ var SS_PATCH = {
         category: 'Phisical',
         zp: 100,
         maxPower: 80,
-        makesContact: true,
         secondaries: true
     },
     'Twinkle Star': {
@@ -4930,6 +4928,15 @@ var SS_PATCH = {
         zp: 110,
         maxPower: 85,
         makesContact: true,
+    },
+    'Horse Kick': {
+        bp: 90,
+        type: 'Fighting',
+        category: 'Phisical',
+        zp: 180,
+        maxPower: 140,
+        makesContact: true,
+        isKick: true
     }
 };
 var SS = (0, util_1.extend)(true, {}, SM, SS_PATCH);
