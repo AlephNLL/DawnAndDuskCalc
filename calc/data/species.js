@@ -7687,7 +7687,7 @@ var SS_PATCH = {
     },
     Boltund: {
         types: ['Electric'],
-        bs: { hp: 69, at: 90, df: 60, sa: 90, sd: 60, sp: 121 },
+        bs: { hp: 69, at: 105, df: 60, sa: 70, sd: 60, sp: 121 },
         weightkg: 34,
         abilities: { 0: 'Strong Jaw' }
     },
@@ -8724,7 +8724,7 @@ var SS_PATCH = {
     },
     Yamper: {
         types: ['Electric'],
-        bs: { hp: 59, at: 45, df: 50, sa: 45, sd: 50, sp: 26 },
+        bs: { hp: 59, at: 50, df: 50, sa: 40, sd: 50, sp: 26 },
         weightkg: 13.5,
         abilities: { 0: 'Rattled' },
         nfe: true
