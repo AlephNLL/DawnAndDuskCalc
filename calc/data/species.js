@@ -5058,7 +5058,7 @@ var XY_PATCH = {
     Bellossom: { bs: { df: 95 } },
     Blastoise: { otherFormes: ['Blastoise-Mega'] },
     Blaziken: { otherFormes: ['Blaziken-Mega'] },
-    Butterfree: { bs: { sa: 90 } },
+    Butterfree: { bs: { sa: 120 } },
     Camerupt: { otherFormes: ['Camerupt-Mega'] },
     Charizard: { otherFormes: ['Charizard-Mega-X', 'Charizard-Mega-Y'] },
     Clefable: { types: ['Fairy'], bs: { sa: 95 } },
