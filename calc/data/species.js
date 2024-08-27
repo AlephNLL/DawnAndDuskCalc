@@ -2048,7 +2048,7 @@ var ADV_PATCH = {
     },
     Exploud: {
         types: ['Normal'],
-        bs: { hp: 104, at: 81, df: 63, sa: 101, sd: 63, sp: 70 },
+        bs: { hp: 104, at: 71, df: 68, sa: 111, sd: 63, sp: 68 },
         weightkg: 84,
         abilities: { 0: 'Soundproof' }
     },
@@ -2203,7 +2203,7 @@ var ADV_PATCH = {
     },
     Loudred: {
         types: ['Normal'],
-        bs: { hp: 84, at: 71, df: 43, sa: 85, sd: 53, sp: 50 },
+        bs: { hp: 84, at: 61, df: 43, sa: 85, sd: 53, sp: 50 },
         weightkg: 40.5,
         nfe: true,
         abilities: { 0: 'Soundproof' }
@@ -5065,7 +5065,7 @@ var XY_PATCH = {
     Clefairy: { types: ['Fairy'] },
     Cleffa: { types: ['Fairy'] },
     Cottonee: { types: ['Grass', 'Fairy'] },
-    Exploud: { bs: { sd: 73 } },
+    Exploud: { bs: { sd: 78 } },
     Gallade: { otherFormes: ['Gallade-Mega'] },
     Garchomp: { otherFormes: ['Garchomp-Mega'] },
     Gardevoir: { types: ['Psychic', 'Fairy'], otherFormes: ['Gardevoir-Mega'] },
