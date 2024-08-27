@@ -673,7 +673,7 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         bpMods.push(6144);
         desc.isHelpingHand = true;
     }
-    var terrainMultiplier = 6144;
+    var terrainMultiplier = 5325;
     if ((0, util_2.isGrounded)(attacker, field)) {
         if ((field.hasTerrain('Electric') && move.hasType('Electric')) ||
             (field.hasTerrain('Grassy') && move.hasType('Grass')) ||
@@ -782,7 +782,7 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         desc.alliesFainted = attacker.alliesFainted;
     }
     if (attacker.hasItem("".concat(move.type, " Gem"))) {
-        bpMods.push(6144);
+        bpMods.push(5325);
         desc.attackerItem = attacker.item;
     }
     else if (((attacker.hasItem('Adamant Crystal') && attacker.named('Dialga-Origin')) ||
