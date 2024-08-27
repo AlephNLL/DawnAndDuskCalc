@@ -78,7 +78,7 @@ var SETDEX_SS = {"Abra":{"Youngster Joey":{"level":15,"ability":"Magic Guard","i
 "Gimmighoul":{"Rich Boy Winston":{"level":13,"ability":"Run Away","item":"Colbur Berry","nature":"Timid","moves":["Confuse Ray","Hex","Confusion","Will-O-Wisp"], "index":11}},
 "Gliscor":{"May/Brendan Route 110 | Tepig":{"level":31,"ability":"Poison Heal","item":"Toxic Orb","nature":"Jolly","moves":["Earthquake","Knock Off","Poison Jab","Protect"],"index":51}},
 "Goldeen":{"Fisherman Ned":{"level":20,"ability":"Lightning Rod","item":"Rindo Berry","nature":"Jolly","moves":["Megahorn","Attract","Waterfall","Zing Zap"], "index":28}},
-"Golem":{"Guitarrist Kirk & Guitarrist Shawn":{"level":34,"ability":"Galvanize","item":"Quick Claw","nature":"Adamant","moves":["Explosion","Rock Slide","Brick Break","Gyro Ball"],"index":63}},
+"Golem-Alola":{"Guitarrist Kirk & Guitarrist Shawn":{"level":34,"ability":"Galvanize","item":"Quick Claw","nature":"Adamant","moves":["Explosion","Rock Slide","Brick Break","Gyro Ball"],"index":63}},
 "Gothorita":{"Lass Janice & School Kid Jerry":{"level":26,"ability":"Competitive","item":"Expert Belt","nature":"Modest","moves":["Foul Play","Expanding Force","Signal Beam","Hidden Power Ice"], "index":36}},
 "Granbull":{"Lady Sarah":{"level":26,"ability":"Intimidate","item":"Muscle Band","nature":"Brave","moves":["Retaliate","Lash Out","Brick Break","Smooch"], "index":37}},
 "Grapploct":{"Battle Girl Laura":{"level":25,"ability":"Moody","item":"White Herb","nature":"Brave","moves":["Octolock","Detect","Drain Punch","Ice Punch"],"index":39}},
